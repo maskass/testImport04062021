@@ -2,7 +2,7 @@
 
 Antiproton elastic scattering cross section using partial waves
 
-... more explanation here...
+... more explanation here (ask Andrea)...
 
 ## Download and compile
 
