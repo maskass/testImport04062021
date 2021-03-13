@@ -38,3 +38,14 @@ Example:
 18 14.4 3851.73 488105 506526
 [...]
 ```
+## Plot example
+Save output data for a given momentum values in a file...
+```bash
+./run.sh 50.0 40.078 20.0 > out50.dat
+```
+... and plot it (ROOT example)
+```bash
+root -l plot.C
+```
+![](fig/example_fig_root.png)
+
