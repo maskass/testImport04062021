@@ -45,10 +45,10 @@ Example:
 
 ## Plot example
 
-Save output data for a given momentum values in a file...
+Save output data for a given momentum values in a file... (the *sed* snippet is to skip the first line with theta=0)
 
 ```bash
-./run.sh 50.0 40.078 20.0 > out50.dat
+./run.sh 50.0 40.078 20.0 | sed -n '2,$'p > out50.dat
 ```
 
 ... and plot it (ROOT example)
