@@ -64,10 +64,8 @@ root -l plot.C
 A scan which saves a unique long output file
 
 ```bash
-
+bash scripts/scan.sh
 ```
-
-
 
 To create a scan + animation:
 
