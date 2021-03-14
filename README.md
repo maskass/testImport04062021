@@ -58,3 +58,21 @@ root -l plot.C
 ```
 
 ![](fig/example_fig_root.png)
+
+## Scripts
+
+A scan which saves a unique long output file
+
+```bash
+
+```
+
+
+
+To create a scan + animation:
+
+```bash
+bash scripts/animated_gif.sh 
+```
+
+![](animationMom.gif)
