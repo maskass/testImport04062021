@@ -1,7 +1,7 @@
 void plot(string input_file = "out50.dat"){
 
-	TGraph * gCoulomb = new TGraph(input_file.c_str(), "%lg %*lg %lg");            // 1st and 3rd column
-	TGraph * gStrong  = new TGraph(input_file.c_str(), "%lg %*lg %*lg %lg");       // 1st and 4th column
+	TGraph * gStrong = new TGraph(input_file.c_str(), "%lg %*lg %lg");            // 1st and 3rd column
+	TGraph * gCoulomb  = new TGraph(input_file.c_str(), "%lg %*lg %*lg %lg");       // 1st and 4th column
 	TGraph * gSum     = new TGraph(input_file.c_str(), "%lg %*lg %*lg %*lg %lg");  // 1st and 5th column
 
 	// line width
@@ -25,7 +25,7 @@ void plot(string input_file = "out50.dat"){
 	TLegend * leg = new TLegend(0.6, 0.6, 0.85, 0.85);
 	leg->AddEntry(gCoulomb, "Coulomb", "l");
 	leg->AddEntry(gStrong, "Strong", "l");
-	leg->AddEntry(gSum, "Coulomb + Strong", "l");
+	leg->AddEntry(gSum, "Strong + Coulomb", "l");
 
 	TCanvas *  c = new TCanvas();
 	c->SetLogy();

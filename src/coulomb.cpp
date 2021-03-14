@@ -94,7 +94,7 @@ int main(int argc, char* argv[]){
 
   for (int itheta = 0; itheta<50; itheta++){
 
-    double theta = (itheta+1)*0.02*M_PI; // 2021 - added a +1 to avoid theta=0
+    double theta = (itheta)*0.02*M_PI;
 
     double sin12 = sin(theta/2);
     double sin122 = sin12*sin12;
